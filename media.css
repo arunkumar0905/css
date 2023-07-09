@@ -1,0 +1,63 @@
+/* (Media Queries)
+    <576px    xs Extra Small
+    >=576px   sm Small
+    >=768px   md Medium
+    >=992px   lg Large
+    >=1200px  xl
+    >=1400px  2xl
+*/
+body{
+    margin-top: 50px;
+}
+body::before{
+content: "XS";
+color: red;
+font-size: 30px;
+font-weight: bold;
+position: fixed;
+top: 0;
+left: 0;
+}
+@media (min-width: 576px){
+    body::before{
+        content: "SM";
+        color: green;
+    }
+}
+
+@media (min-width: 768px){
+    body::before{
+        content: "MD";
+        color: blue;
+    }
+}
+
+@media (min-width: 992px){
+    body::before{
+        content: "LG";
+        color: chartreuse;
+    }
+}
+
+@media (min-width: 1200px){
+    body::before{
+        content: "XL";
+        color: yellow;
+    }
+}
+
+@media (min-width: 1400px){
+    body::before{
+        content: "XXL";
+        color: brown;
+    }
+}
+
+.sample{
+    background-color: aqua;
+    border: 1px solid green;
+    min-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+<html>
+    <head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    margin-top: 200px;
+    text-align: center;
+}
+div ul{
+    display: inline-block;
+    list-style-type: none;
+    transform:skew(-25deg);
+}
+div ul li{
+    background-color: white;
+    color: blue;
+    float: left;
+    border-right: 1px solid lightslategrey;
+    box-shadow: 1.95px 1.95px 2.6px black 1;
+    text-transform: uppercase;
+    color: blue;
+    transition: all 0.2s linear;
+}
+a{
+    color: inherit;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    transform:skew(25deg);
+}
+    /*top-left  top-right  bottom-right  bottom-left*/
+div ul li:first-child{
+    border-radius: 7px 0 0 7px;
+}
+div ul li:last-child{
+    border-radius: 0 7px 7px 0;
+}
+div ul li:hover{
+    background-color: aqua;
+    color:black;
+}
+</style>
+    </head>
+    <body>
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </body>
+</html>

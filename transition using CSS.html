@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+            /*1. Transition
+              2. Transition-property
+              3. Transition-duration
+              4. Transition-delay
+              5. Transition-timing-function */
+
+            /*transition-property: width, height,background-color;
+            transition-duration: 1s,1s,0.5s;*/
+
+            /*transition-property: all;
+            transition-duration: 1s;*/
+
+            /*transition: width, height, 1s, 1s;*/
+            /*transition-delay: 2s;*/
+
+            /*transition-timing-function: ease; 
+            inbuilded in ease of transition property
+
+            it as a 6-types timing function
+            1. ease: specifies a transition effect with a slow start, then fast, then end slowly (this is default).
+            2. linear: specifies a transition effect with the same speed from start and end.
+            3. ease-in: specifies a transition effect with a slow start.
+            4. ease-out: specifies a transition effec with a slow end.
+            5. ease-in-out: specifies a transition effect with a slow start and end.
+            6. cubic-bezier:(n,n,n,n) lets you define your own values in a cubic bezier function.*/
+
+            /*transition: all 1s 2s ease;*/
+            transition: all 1s linear;
+
+            
+        }
+        .box:hover{
+            width: 500px;
+            height:500px;
+            background-color:aqua;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+    
+    
+</body>
+</html>
